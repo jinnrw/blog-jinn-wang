@@ -1,0 +1,27 @@
+.sidebar {
+    width: 30%;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+
+    &__avatar {
+
+        img {
+            width: 160px;
+        }
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: bold;
+        margin: 10px 0 30px;
+    }
+
+    &__desc {
+        color: #888;
+        line-height: 26px;
+    }
+
+    .link {
+        color: #0366d6;
+    }
+}
