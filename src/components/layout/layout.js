@@ -1,15 +1,15 @@
 import React from "react"
+import Footer from '../footer/footer'
+import styles from "./layout.module.scss"
 
 export default ({ children }) => {
-    const styles = {
-        maxWidth: "1080px",
-        margin: "0 auto",
-        padding: "50px 0",
-    }
 
     return (
-        <div id="app" style={styles}>
-            {children}
+        <div className={styles.app}>
+            <div className={styles.appContent}>
+                {children}
+            </div>
+            <Footer />
         </div>
     )
 }

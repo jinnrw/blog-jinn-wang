@@ -20,7 +20,7 @@ const PostLink = ({ post }) => {
                 ))}
             </div>
             <div className={styles.abstract}>{frontmatter.description}</div>
-        </div >
+        </div>
     )
 }
 

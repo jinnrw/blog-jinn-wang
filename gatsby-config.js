@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Jinn Wang`,
+    title: `Jinn Wang | Web Development Blog`,
     description: `A front end developer's notes`,
     author: `Jinn Wang`,
   },
@@ -8,8 +8,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Jinn Wang's Blog`,
-        short_name: `Jinn Wang's Blog`,
+        name: `Jinn Wang | Web Development Blog`,
+        short_name: `Jinn Wang | Web Development Blog`,
         start_url: `/`,
         background_color: ``,
         theme_color: ``,
@@ -24,7 +24,19 @@ module.exports = {
         path: `${__dirname}/src/markdown-pages`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              aliases:{js:"javascript"},
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,

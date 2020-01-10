@@ -1,0 +1,11 @@
+.app {
+    position: relative;
+    min-height: 100vh;
+}
+
+.app-content {
+    display: flex;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 50px 0 120px;
+}

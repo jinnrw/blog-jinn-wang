@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import PostLink from '../post-link/post-link'
 import styles from './main.module.scss'
+import PostLink from '../post-link/post-link'
 
 const Main = () => {
     const data = useStaticQuery(graphql`

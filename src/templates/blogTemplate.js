@@ -1,10 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Helmet from "react-helmet"
 import Layout from '../components/layout/layout'
 import Header from '../components/header/header'
-import Footer from '../components/footer/footer'
 import styles from './blogTemplate.module.scss';
-
 
 const Template = ({
   data, // this prop will be injected by the GraphQL query below.
@@ -14,6 +13,9 @@ const Template = ({
 
   return (
     <React.Fragment>
+      <Helmet>
+        <title>{frontmatter.title}</title>
+      </Helmet>
       <Header />
       <Layout>
         <div className={styles.postContainer}>
@@ -34,7 +36,6 @@ const Template = ({
           </div>
         </div>
       </Layout>
-      <Footer />
     </React.Fragment>
   )
 }
