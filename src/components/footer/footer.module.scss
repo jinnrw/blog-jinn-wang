@@ -24,3 +24,13 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+
+        .copyright{
+            margin-bottom: 15px;
+        }
+    }
+}

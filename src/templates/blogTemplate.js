@@ -32,6 +32,7 @@ const Template = ({
                   <div className={styles.tag}>{tag}</div>
                 ))}
               </div>
+              <div className={styles.author}>Published By Jinn Wang</div>
             </div>
           </div>
         </div>

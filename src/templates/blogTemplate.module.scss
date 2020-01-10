@@ -11,9 +11,9 @@
     }
 
     .content {
-        min-height: 50vh;
         font-size: 18px;
         line-height: 30px; 
+        margin-bottom: 120px;
 
         a {
             color: #0366d6;
@@ -24,7 +24,6 @@
 
 .meta {
     margin-bottom: 30px;
-    padding-top: 15px;
 
     .date {
         margin-right: 20px;
@@ -46,6 +45,25 @@
             border-radius: 3px;
             background-color: rgba(0, 0, 0, 0.05);
             color: rgba(0, 0, 0, 0.54);
+        }
+    }
+}
+
+.author {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+    .post {
+        
+        .title {
+            margin-bottom: 30px;
+        }
+
+        .content {
+            font-size: 16px;
+            line-height: 26px;
         }
     }
 }

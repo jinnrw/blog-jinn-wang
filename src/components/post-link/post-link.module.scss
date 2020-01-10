@@ -3,15 +3,16 @@
 
     .title {
         font-size: 28px;
-        line-height: 40px;
+        line-height: 36px;
     }
 
     .desc {
         display: flex;
+        align-items: center;
         font-size: 14px;
         color: #888;
         font-weight: 600;
-        margin: 5px 0;
+        margin: 6px 0;
     }
 
     .date {
@@ -21,14 +22,40 @@
     .tag {
         margin-right: 10px;
         padding: 0 3px;
-        text-transform: uppercase;
         font-weight: 600;
         display: flex;
         align-items: center;
         color: #0366d6;
+
+        // margin-right: 10px;
+        // font-size: 14px;
+        // line-height: 20px;
+        // font-weight: 600;
+        // display: flex;
+        // align-items: center;
+        // padding: 2px 10px;
+        // border-radius: 3px;
+        // background-color: rgba(0, 0, 0, 0.05);
+        // color: rgba(0, 0, 0, 0.54);
     }
 
     .abstract {
         margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .post-link {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .post-link {
+
+        .title {
+            font-size: 20px;
+            line-height: 26px;
+        }
     }
 }

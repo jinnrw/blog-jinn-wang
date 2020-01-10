@@ -3,25 +3,50 @@
     padding: 20px;
     border-right: 1px solid #ddd;
 
-    &__avatar {
-
-        img {
-            width: 160px;
-        }
+    .link {
+        color: #0366d6;
     }
+}
 
-    &__title {
+.avatar {
+
+    img {
+        width: 160px;
+    }
+}
+
+.content {
+    padding-bottom: 20px;
+
+    .title {
         font-size: 22px;
         font-weight: bold;
         margin: 10px 0 30px;
     }
 
-    &__desc {
+    .desc {
         color: #888;
         line-height: 26px;
     }
+}
 
-    .link {
-        color: #0366d6;
+@media (max-width: 767px) {
+    .sidebar {
+        width: calc(100% - 40px);
+        border-right: none;
+        padding-bottom: 0;
+    }
+
+    .avatar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+        border-bottom: 1px solid #ddd;
+
+        .title {
+            text-align: center;
+        }
     }
 }
