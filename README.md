@@ -8,11 +8,12 @@ I'll be sharing my notes and tutorials about Javascript and web development in g
 
 
 ## Features
+- Gatsby and React
 - GraphQL
 - Markdown support
 - Syntax highlighter
 - react-helmet
-- CSS module & SCSS
+- CSS modules & SCSS
 - SEO
 - Services worker
 
